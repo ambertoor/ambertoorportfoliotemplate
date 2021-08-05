@@ -1,8 +1,12 @@
+/* main font family for the entire page */
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   height: 100%;
+
+/* different sections within page */
   
 }
 article,
@@ -56,6 +60,11 @@ dfn {
 h1 {
   margin: 0.67em 0;
 }
+
+
+
+
+
 mark {
   background: #ff0;
   color: #000;
@@ -82,6 +91,7 @@ img {
   vertical-align: middle;
   display: inline-block;
 }
+
 svg:not(:root) {
   overflow: hidden;
 }
@@ -2047,7 +2057,7 @@ body {
 }
 .project-hero.eic-project-hero {
   background-color: #df3734;
-  background-image: url("https://uploads-ssl.webflow.com/60dc79ab28c396d2972ef3e8/60ddec74744efc9c8beab6a7_eic-home-bg-3.jpg");
+  background-image: url("wallpaper2you_250521.jpeg");
   background-position: 50% 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2111,6 +2121,9 @@ body {
 .home-project-summary.white {
   color: #fff;
 }
+.home-project-summary.black {
+  color: rgb(0, 0, 0);
+}
 .home-project-summary.lba-green {
   color: #cbe430;
 }
@@ -2123,6 +2136,12 @@ body {
   width: 100%;
   color: #fff;
 }
+
+.home-project-title.gray {
+  width: 100%;
+  color: rgb(58, 53, 53);
+}
+
 .home-project-title.lba-green {
   color: #cbe430;
 }
@@ -2402,7 +2421,7 @@ body {
   justify-content: center;
 }
 .project-block.ma-red-bg {
-  background-color: #f15a24;
+  background-color:red;
 }
 .project-block.ma-red-bg.h-center {
   -webkit-box-pack: center;
@@ -2416,41 +2435,8 @@ body {
   -ms-flex-align: center;
   align-items: center;
 }
-.project-block.curzon-hero {
-  background-color: #5cd99e;
-  background-image: url("https://uploads-ssl.webflow.com/60dc79ab28c396d2972ef3e8/60f6e059130cd12cc1af62f8_curzon-hero-4.jpg");
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-}
-.project-block.cz-green-bg {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #5ed79f;
-}
-.project-block.cz-green-bg.h-center {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-.project-block.cz-green-bg.h-center.v-center {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
+
+
 .project-block.cz-lilac-bg {
   background-color: #ada5ff;
 }
@@ -2871,7 +2857,7 @@ body {
 }
 .about-info-container {
   display: block;
-  width: 62.5%;
+  width: 80%;
 }
 .about-paragraph {
   width: auto;
@@ -3588,4 +3574,24 @@ body {
     width: 90%;
     font-size: 8vw;
   }
+}
+
+
+.wallpaper_column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clearfix (clear floats) */
+.wallpaper_row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding-bottom: 20px;
+}
+
+.mystory-paragraph { 
+padding-left: 20px;
+
+
 }
